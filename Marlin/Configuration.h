@@ -548,7 +548,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          1200    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   1200    // X, Y, Z acceleration for travel (non printing) moves
 
@@ -560,8 +560,8 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 8.0
-#define DEFAULT_YJERK                 8.0
+#define DEFAULT_XJERK                 4.0
+#define DEFAULT_YJERK                 4.0
 #define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
 
@@ -1114,7 +1114,7 @@
   #define NOZZLE_CLEAN_END_POINT   {100, 210, (Z_MIN_POS + 3)}
 
   // Circular pattern radius
-  #define NOZZLE_CLEAN_CIRCLE_RADIUS 8
+  #define NOZZLE_CLEAN_CIRCLE_RADIUS 20
   // Circular pattern circle fragments number
   #define NOZZLE_CLEAN_CIRCLE_FN 8
   // Middle point of circle
